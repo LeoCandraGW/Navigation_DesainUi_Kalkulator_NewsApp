@@ -6,6 +6,7 @@ import 'package:fundamental_flutter/desain_ui.dart';
 import 'package:fundamental_flutter/kalkulator.dart';
 import 'package:fundamental_flutter/styles.dart';
 import 'package:fundamental_flutter/article.dart';
+import 'package:fundamental_flutter/animasi.dart';
 
 void main() {
   runApp(const MyApp());
@@ -57,6 +58,7 @@ class MyApp extends StatelessWidget {
               article: ModalRoute.of(context)?.settings.arguments as Article),
         '/articlewebview':(context) => ArticleWebView(
               url: ModalRoute.of(context)?.settings.arguments as String),
+        '/animasi':(context) => AnimationPage(),
       },
     );
   }

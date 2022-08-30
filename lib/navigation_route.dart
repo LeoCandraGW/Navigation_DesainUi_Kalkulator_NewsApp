@@ -53,6 +53,11 @@ class FirstScreen extends StatelessWidget {
                   Navigator.pushNamed(context, '/newsapp');
                 },
                 child: Text('News App')),
+            ElevatedButton(
+                onPressed: () {
+                  Navigator.pushNamed(context, '/animasi');
+                },
+                child: Text('Animation')),
           ],
         ),
       ),
